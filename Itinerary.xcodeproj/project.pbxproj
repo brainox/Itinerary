@@ -16,6 +16,11 @@
 		B4BECA682704950900A69A5E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BECA672704950900A69A5E /* Data.swift */; };
 		B4BECA6A2704951F00A69A5E /* TripModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BECA692704951F00A69A5E /* TripModel.swift */; };
 		B4BECA6C2704952800A69A5E /* TripFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BECA6B2704952800A69A5E /* TripFunctions.swift */; };
+		B4BECA6E2704ACEF00A69A5E /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BECA6D2704ACEF00A69A5E /* TripsTableViewCell.swift */; };
+		B4BECA712704B49100A69A5E /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BECA702704B49100A69A5E /* UIViewExtensions.swift */; };
+		B4BECA762704B82D00A69A5E /* Themes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BECA752704B82D00A69A5E /* Themes.swift */; };
+		B4BECA782704B90D00A69A5E /* Georgia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4BECA772704B90D00A69A5E /* Georgia.ttf */; };
+		B4BECA7A2704C00700A69A5E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BECA792704C00700A69A5E /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		B4BECA672704950900A69A5E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		B4BECA692704951F00A69A5E /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
 		B4BECA6B2704952800A69A5E /* TripFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFunctions.swift; sourceTree = "<group>"; };
+		B4BECA6D2704ACEF00A69A5E /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		B4BECA702704B49100A69A5E /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		B4BECA752704B82D00A69A5E /* Themes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themes.swift; sourceTree = "<group>"; };
+		B4BECA772704B90D00A69A5E /* Georgia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Georgia.ttf; sourceTree = "<group>"; };
+		B4BECA792704C00700A69A5E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,8 @@
 		B4BECA63270494A000A69A5E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B4BECA742704B81D00A69A5E /* Resources */,
+				B4BECA6F2704B47B00A69A5E /* Extensions */,
 				B4BECA65270494C100A69A5E /* TripsViewController */,
 			);
 			path = Views;
@@ -95,6 +107,7 @@
 			children = (
 				B4BECA552704947000A69A5E /* TripsViewController.storyboard */,
 				B4BECA532704947000A69A5E /* TripsViewController.swift */,
+				B4BECA6D2704ACEF00A69A5E /* TripsTableViewCell.swift */,
 			);
 			path = TripsViewController;
 			sourceTree = "<group>";
@@ -106,6 +119,24 @@
 				B4BECA692704951F00A69A5E /* TripModel.swift */,
 			);
 			path = Trip;
+			sourceTree = "<group>";
+		};
+		B4BECA6F2704B47B00A69A5E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4BECA702704B49100A69A5E /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B4BECA742704B81D00A69A5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4BECA772704B90D00A69A5E /* Georgia.ttf */,
+				B4BECA752704B82D00A69A5E /* Themes.swift */,
+				B4BECA792704C00700A69A5E /* Colors.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +196,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BECA7A2704C00700A69A5E /* Colors.xcassets in Resources */,
 				B4BECA5C2704947200A69A5E /* LaunchScreen.storyboard in Resources */,
 				B4BECA592704947200A69A5E /* Assets.xcassets in Resources */,
 				B4BECA572704947000A69A5E /* TripsViewController.storyboard in Resources */,
+				B4BECA782704B90D00A69A5E /* Georgia.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,9 +213,12 @@
 			files = (
 				B4BECA542704947000A69A5E /* TripsViewController.swift in Sources */,
 				B4BECA502704947000A69A5E /* AppDelegate.swift in Sources */,
+				B4BECA712704B49100A69A5E /* UIViewExtensions.swift in Sources */,
 				B4BECA6C2704952800A69A5E /* TripFunctions.swift in Sources */,
+				B4BECA762704B82D00A69A5E /* Themes.swift in Sources */,
 				B4BECA522704947000A69A5E /* SceneDelegate.swift in Sources */,
 				B4BECA6A2704951F00A69A5E /* TripModel.swift in Sources */,
+				B4BECA6E2704ACEF00A69A5E /* TripsTableViewCell.swift in Sources */,
 				B4BECA682704950900A69A5E /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
