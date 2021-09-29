@@ -13,10 +13,15 @@ class TripFunctions {
     }
     
     static func readTrips(completion: @escaping () -> ()) {
-        if Data.tripModel.count == 0 {
-            Data.tripModel.append(TripModel(title: "Trip to Barracuda beach"))
-            Data.tripModel.append(TripModel(title: "Lekki Conservation Center"))
-            Data.tripModel.append(TripModel(title: "Lekki Cinema"))
+        DispatchQueue.global(qos: .userInteractive).async {
+            if Data.tripModel.count == 0 {
+                Data.tripModel.append(TripModel(title: "Trip to Barracuda beach"))
+                Data.tripModel.append(TripModel(title: "Lekki Conservation Center"))
+                Data.tripModel.append(TripModel(title: "Lekki Cinema"))
+            }
+            DispatchQueue.main.async {
+                completion()
+            }
         }
        
     }
