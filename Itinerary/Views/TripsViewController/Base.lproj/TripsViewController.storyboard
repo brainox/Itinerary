@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Od-1O-1YS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Od-1O-1YS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="160" id="eFz-qx-NZx" customClass="TripsTableViewCell" customModule="Itinerary" customModuleProvider="target">
@@ -52,11 +51,31 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6x-rM-pfR">
+                                <rect key="frame" x="301" y="592" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="7XG-7j-X8h"/>
+                                    <constraint firstAttribute="height" constant="56" id="Z52-mq-wNX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" image="plus" catalog="system">
+                                    <color key="titleColor" red="0.69791697789999996" green="0.2431772757" blue="0.080333262259999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D6x-rM-pfR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-19" id="6i4-DZ-HoB"/>
+                            <constraint firstItem="8Od-1O-1YS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="JSK-o0-3ik"/>
+                            <constraint firstItem="8Od-1O-1YS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nih-pD-k2I"/>
+                            <constraint firstItem="8Od-1O-1YS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UIB-aM-Irt"/>
+                            <constraint firstItem="8Od-1O-1YS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hRL-zO-dw6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D6x-rM-pfR" secondAttribute="trailing" constant="18" id="mzE-AJ-Hzo"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="D6x-rM-pfR" id="i4o-5z-3yf"/>
                         <outlet property="tableView" destination="8Od-1O-1YS" id="PnA-TO-jLV"/>
                     </connections>
                 </viewController>
@@ -66,6 +85,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

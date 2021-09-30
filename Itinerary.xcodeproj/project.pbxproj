@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B476D46127064C900093215A /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B476D46027064C900093215A /* UIButtonExtension.swift */; };
 		B4BECA502704947000A69A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BECA4F2704947000A69A5E /* AppDelegate.swift */; };
 		B4BECA522704947000A69A5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BECA512704947000A69A5E /* SceneDelegate.swift */; };
 		B4BECA542704947000A69A5E /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BECA532704947000A69A5E /* TripsViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B476D46027064C900093215A /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		B4BECA4C2704947000A69A5E /* Itinerary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Itinerary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BECA4F2704947000A69A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4BECA512704947000A69A5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				B4BECA702704B49100A69A5E /* UIViewExtensions.swift */,
+				B476D46027064C900093215A /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4BECA542704947000A69A5E /* TripsViewController.swift in Sources */,
+				B476D46127064C900093215A /* UIButtonExtension.swift in Sources */,
 				B4BECA502704947000A69A5E /* AppDelegate.swift in Sources */,
 				B4BECA712704B49100A69A5E /* UIViewExtensions.swift in Sources */,
 				B4BECA6C2704952800A69A5E /* TripFunctions.swift in Sources */,
