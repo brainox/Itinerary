@@ -62,7 +62,7 @@
                                     <color key="titleColor" red="0.69791697789999996" green="0.2431772757" blue="0.080333262259999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1gU-kT-r7G" kind="presentation" id="lA4-R1-n1X"/>
+                                    <segue destination="aIC-eO-rzF" kind="presentation" id="uU7-yA-0cr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,13 +86,20 @@
             </objects>
             <point key="canvasLocation" x="47.200000000000003" y="93.103448275862078"/>
         </scene>
-        <!--AddTripViewController-->
-        <scene sceneID="7I9-to-7jg">
+        <!--View Controller-->
+        <scene sceneID="KAs-5a-ywn">
             <objects>
-                <viewControllerPlaceholder storyboardName="AddTripViewController" id="1gU-kT-r7G" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lRl-a9-EIz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="aIC-eO-rzF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p4X-cd-6g6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0L8-lt-EIc"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40165083929402939" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQr-CJ-vGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="93"/>
+            <point key="canvasLocation" x="793" y="93"/>
         </scene>
     </scenes>
     <resources>

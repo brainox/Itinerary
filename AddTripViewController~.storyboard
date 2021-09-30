@@ -62,7 +62,7 @@
                                     <color key="titleColor" red="0.69791697789999996" green="0.2431772757" blue="0.080333262259999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1gU-kT-r7G" kind="presentation" id="lA4-R1-n1X"/>
+                                    <segue destination="qg8-RB-kTm" kind="presentation" id="lA4-R1-n1X"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,11 +86,18 @@
             </objects>
             <point key="canvasLocation" x="47.200000000000003" y="93.103448275862078"/>
         </scene>
-        <!--AddTripViewController-->
-        <scene sceneID="7I9-to-7jg">
+        <!--View Controller-->
+        <scene sceneID="cLK-cm-l9k">
             <objects>
-                <viewControllerPlaceholder storyboardName="AddTripViewController" id="1gU-kT-r7G" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lRl-a9-EIz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="qg8-RB-kTm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GrQ-jp-qWw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cDR-cv-igK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwb-zR-TWe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="809" y="93"/>
         </scene>
