@@ -8,7 +8,7 @@
 import UIKit
 
 class TripsViewController: UIViewController {
-   
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addButton: UIButton!
     
@@ -24,6 +24,15 @@ class TripsViewController: UIViewController {
         view.backgroundColor = Themes.backgroundColor
         addButton.createFloatingActionButton()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toAddTripSegue" {
+            let popup = segue.destination as! AddTripViewController
+            popup.doneSaving = { [weak self] in
+                self?.tableView.reloadData()
+            }
+        }
+    }
 }
 
 extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
@@ -38,7 +47,7 @@ extension TripsViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160
     }

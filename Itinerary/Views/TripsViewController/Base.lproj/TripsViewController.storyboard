@@ -62,7 +62,7 @@
                                     <color key="titleColor" red="0.69791697789999996" green="0.2431772757" blue="0.080333262259999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1gU-kT-r7G" kind="presentation" id="lA4-R1-n1X"/>
+                                    <segue destination="1gU-kT-r7G" kind="presentation" identifier="toAddTripSegue" id="lA4-R1-n1X"/>
                                 </connections>
                             </button>
                         </subviews>
