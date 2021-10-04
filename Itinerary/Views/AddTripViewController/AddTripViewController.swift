@@ -25,6 +25,8 @@ class AddTripViewController: UIViewController {
     }
     
     @IBAction func save(_ sender: Any) {
+        TripFunctions.createTrip(tripModel: TripModel(title: tripTextField.text!))
+        
         if let doneSaving = doneSaving {
             doneSaving()
         }
