@@ -3,6 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,10 +21,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8J-O2-vBh" customClass="PopupUIView" customModule="Itinerary" customModuleProvider="target">
                                 <rect key="frame" x="20" y="44" width="374" height="155"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Loz-fd-9zL">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="155"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIG-th-Ulb">
                                         <rect key="frame" x="8" y="8" width="358" height="36"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -48,8 +53,26 @@
                                             <action selector="save:" destination="qg8-RB-kTm" eventType="touchUpInside" id="ycj-o0-2bK"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yn5-Qd-cwr">
+                                        <rect key="frame" x="317" y="13" width="49" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="tintColor" name="Tint"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="camera.fill" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addPhoto:" destination="qg8-RB-kTm" eventType="touchUpInside" id="3aI-h3-pW7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Loz-fd-9zL" firstAttribute="leading" secondItem="r8J-O2-vBh" secondAttribute="leading" id="21D-Im-cpa"/>
+                                    <constraint firstItem="Loz-fd-9zL" firstAttribute="top" secondItem="r8J-O2-vBh" secondAttribute="top" id="U5t-XY-v3v"/>
+                                    <constraint firstAttribute="trailing" secondItem="Loz-fd-9zL" secondAttribute="trailing" id="Zqo-Qp-eI4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Loz-fd-9zL" secondAttribute="bottom" id="beF-6y-y5M"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cDR-cv-igK"/>
@@ -63,6 +86,7 @@
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="FKI-gE-PCu" id="hpo-tN-3AN"/>
+                        <outlet property="imageView" destination="Loz-fd-9zL" id="egp-wP-uMq"/>
                         <outlet property="saveButton" destination="Tpk-5o-Bt1" id="qkA-ZZ-kNX"/>
                         <outlet property="titleLabel" destination="yIG-th-Ulb" id="RBf-YF-4s5"/>
                         <outlet property="tripTextField" destination="jST-fL-0La" id="mDG-o2-8q9"/>
@@ -74,6 +98,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <namedColor name="Tint">
+            <color red="0.92799997329711914" green="0.17599999904632568" blue="0.18199999630451202" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
